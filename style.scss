@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Variables
+// Colors
+
+//  Primary
+
+$Dark_cyan: #3c8067;
+$Cream: #f2ebe3;
+
+// Neutral
+
+$Very_dark_blue: #1c232b;
+$Dark_grayish_blue: #6c7289;
+$White: #ffffff;
+
+// Typography (paragraph)
+
+$font_size: 14px;
+
+// Font Family
+$Mons: "Montserrat", sans-serif;
+$Fra: "Fraunces", serif;
+
+.wrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.details {
+  span,
+  p {
+    font-size: $font_size;
+  }
+  span:nth-child(1) {
+    font-family: $Mons;
+    color: $Dark_grayish_blue;
+    letter-spacing: 0.4rem;
+  }
+  h2 {
+    font-family: $Fra;
+  }
+  p {
+    color: $Dark_grayish_blue;
+    font-family: $Mons;
+  }
+}
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  strong {
+    color: $Dark_cyan;
+    font-family: $Fra;
+    font-size: xx-large;
+  }
+  s{
+    color: $Very_dark_blue;
+    font-family: $Mons;
+    font-size: small;
+    color: $Dark_grayish_blue;
+  }
+}
+
