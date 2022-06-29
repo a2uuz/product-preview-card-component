@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.details span,
+.details p {
+  font-size: 14px;
+}
+
+.details span:nth-child(1) {
+  font-family: "Montserrat", sans-serif;
+  color: #6c7289;
+  letter-spacing: 0.4rem;
+}
+
+.details h2 {
+  font-family: "Fraunces", serif;
+}
+
+.details p {
+  color: #6c7289;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.pricing strong {
+  color: #3c8067;
+  font-family: "Fraunces", serif;
+  font-size: xx-large;
+}
+
+.pricing s {
+  color: #1c232b;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  color: #6c7289;
+}
+/*# sourceMappingURL=style.css.map */
