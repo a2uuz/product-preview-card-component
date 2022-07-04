@@ -28,12 +28,20 @@ $font_size: 14px;
 $Mons: "Montserrat", sans-serif;
 $Fra: "Fraunces", serif;
 
-.wrapper{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: 100vh;
+body {
+  padding: 2rem;
+  background-color: tomato;
+}
+main {
+  background-color: white;
+  border-radius: 2rem;
+}
+.img {
+  height: 23vh;
+  width: 100%;
+  background: url("../images/image-product-desktop.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .details {
@@ -70,4 +78,3 @@ height: 100vh;
     color: $Dark_grayish_blue;
   }
 }
-
