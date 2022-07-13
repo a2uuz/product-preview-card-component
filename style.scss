@@ -34,18 +34,17 @@ body {
 }
 main {
   background-color: white;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
-
 
 .details {
   .img {
-  height: 23vh;
-  width: 100%;
-  background: url("../images/image-product-desktop.jpg") no-repeat 40%;
-  background-size: cover;
-  border-radius: .5rem .5rem 0 0;
-}
+    height: 23vh;
+    width: 100%;
+    background: url("../images/image-product-mobile.jpg") no-repeat 40%;
+    background-size: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
   span,
   p {
     font-size: $font_size;
@@ -64,12 +63,10 @@ main {
   p {
     color: $Dark_grayish_blue;
     font-family: $Mons;
-    font-size: .85rem;
+    font-size: 0.85rem;
     margin-bottom: 2rem;
   }
 }
-
-
 .inner {
   display: flex;
   flex-direction: column;
@@ -103,4 +100,60 @@ button {
   display: flex;
   justify-content: center;
   gap: 1rem;
+
+  &:hover{
+    background-color: darken($Dark_cyan, 15%);
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 770px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+main{
+      width: 80%;
+}
+  .details {
+    display: flex;
+    .inner{
+      width: 50%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      span:nth-child(1){
+        font-size: 1.2rem;
+      }
+      h2{
+        font-size: 3rem;
+      }
+      p{
+        font-size: xx-large;
+      }
+      button{
+        padding:1.2rem 2rem;
+        span{
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .pricing{
+      strong{
+        font-size: 3rem;
+      }
+      s{
+        font-size: medium;
+      }
+    }
+    .img {
+      width: 50%;
+      height: 100vh;
+      background: url("../images/image-product-desktop.jpg") no-repeat 100%;
+      background-size: cover;
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+  }
 }

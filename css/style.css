@@ -14,15 +14,15 @@ body {
 
 main {
   background-color: white;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .details .img {
   height: 23vh;
   width: 100%;
-  background: url("../images/image-product-desktop.jpg") no-repeat 40%;
+  background: url("../images/image-product-mobile.jpg") no-repeat 40%;
   background-size: cover;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .details span,
@@ -46,7 +46,7 @@ main {
 .details p {
   color: #6c7289;
   font-family: "Montserrat", sans-serif;
-  font-size: .85rem;
+  font-size: 0.85rem;
   margin-bottom: 2rem;
 }
 
@@ -100,5 +100,71 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1rem;
+}
+
+button:hover {
+  background-color: #244c3d;
+  cursor: pointer;
+}
+
+@media (min-width: 770px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main {
+    width: 80%;
+  }
+  .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .details .inner {
+    width: 50%;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .details .inner span:nth-child(1) {
+    font-size: 1.2rem;
+  }
+  .details .inner h2 {
+    font-size: 3rem;
+  }
+  .details .inner p {
+    font-size: xx-large;
+  }
+  .details .inner button {
+    padding: 1.2rem 2rem;
+  }
+  .details .inner button span {
+    font-size: 1.1rem;
+  }
+  .details .pricing strong {
+    font-size: 3rem;
+  }
+  .details .pricing s {
+    font-size: medium;
+  }
+  .details .img {
+    width: 50%;
+    height: 100vh;
+    background: url("../images/image-product-desktop.jpg") no-repeat 100%;
+    background-size: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
